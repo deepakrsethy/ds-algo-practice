@@ -1,4 +1,4 @@
-package array.twopointers;
+package array.twopointers.easy;
 
 /**
  * Remove duplicates from a sorted array

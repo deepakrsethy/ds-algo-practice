@@ -1,4 +1,4 @@
-package array.twopointers;
+package array.twopointers.easy;
 
 public class FindMissingNumber {
     public static void main(String[] args) {
