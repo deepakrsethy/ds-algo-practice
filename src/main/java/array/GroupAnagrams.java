@@ -10,6 +10,7 @@ public class GroupAnagrams {
     public static void main(String[] args) {
         String[] arr = {"rat", "man","tar", "anm","art", "bat"};
         List<List<String>> result = groupAnagrams(arr);
+        result.stream().forEach(strings -> System.out.println(strings));
     }
 
     private static List<List<String>> groupAnagrams(String[] arr) {

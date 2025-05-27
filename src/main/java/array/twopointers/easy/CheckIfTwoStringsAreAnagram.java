@@ -1,6 +1,9 @@
 package array.twopointers.easy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Checks if two Strings are anagram
@@ -11,6 +14,17 @@ public class CheckIfTwoStringsAreAnagram {
         String s2 = new String("spar");
 
         System.out.println( "S1 :"+s1 + "and S2 :"+s2+" are anagram ? :"+ checkIfTwoStringsAreAnagram(s1, s2));
+
+        System.out.println( "S1 :"+s1 + "and S2 :"+s2+" are anagram ? :"+ checkIfTwoStringsAreAnagramWithOn(s1, s2));
+    }
+
+    public static boolean checkIfTwoStringsAreAnagramWithOn(String s1, String s2) {
+
+        List<Character> chars1 = s1.chars().mapToObj( c -> (char) c).collect(Collectors.toList());
+        for(int i = 0; i< s2.length(); i++) {
+            chars1.remove(s2.charAt(i));
+        }
+        return chars1.isEmpty();
     }
 
     /**

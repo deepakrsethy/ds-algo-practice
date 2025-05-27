@@ -21,7 +21,6 @@ public class CheckIfArrayIsPalindrome {
             System.out.println(Arrays.toString(arr) + " => " + checkIfPalindrome(arr));
         }
     }
-
     /**
      * Checks if an array is a palindrome or not.
      * @param arr the array to check

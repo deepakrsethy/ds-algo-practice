@@ -2,6 +2,11 @@ package array.multidimensional;
 
 public class MultiDArray {
     public static void main(String[] args) {
+        String s = "KDMAL02120420000019883";
+
+        System.out.println(s.length());
+
+
         int[][] arr = new int[2][3];
         arr[0][0] = 1;
         arr[0][1] = 2;
